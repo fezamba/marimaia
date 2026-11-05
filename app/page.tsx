@@ -1,10 +1,3 @@
-const interests = [
-  { icon: "🎀", label: "Hello Kitty" },
-  { icon: "🍥", label: "Naruto" },
-  { icon: "⚔", label: "Solo Leveling" },
-  { icon: "🎭", label: "Teatro" },
-];
-
 export default function Home() {
   return (
     <main>
@@ -15,9 +8,10 @@ export default function Home() {
         <div className="sparkles" aria-hidden="true">
           <span>✦</span><span>✧</span><span>♡</span><span>✦</span><span>✧</span>
         </div>
+        <img className="heroMasks" src="/mari/theater-masks.png" alt="Máscaras de teatro coloridas" />
 
         <div className="heroContent">
-          <p className="eyebrow"><span>✦</span> 5 de novembro <span>✦</span></p>
+          <p className="eyebrow"><span>✦</span> 6 de novembro <span>✦</span></p>
           <div className="marquee">
             <span className="marqueeLight lightOne" aria-hidden="true" />
             <span className="marqueeLight lightTwo" aria-hidden="true" />
@@ -26,7 +20,7 @@ export default function Home() {
             <span className="marqueeLight lightFive" aria-hidden="true" />
             <span className="marqueeLight lightSix" aria-hidden="true" />
             <p>APRESENTA</p>
-            <h1 id="birthday-title">Feliz aniversário,<br /><em>Mariana Maia!</em></h1>
+            <h1 id="birthday-title">Feliz aniversário,<br /><em>Mari Maia!</em></h1>
           </div>
           <p className="heroCopy">Hoje, o palco é todo seu.</p>
           <a className="ticketButton" href="#carta">
@@ -46,6 +40,7 @@ export default function Home() {
           <h2 id="letter-title">Tudo que está<br />dentro do meu coração</h2>
           <div className="ornament" aria-hidden="true"><span>✦</span> ♡ <span>✦</span></div>
         </div>
+        <img className="ballerinaSticker" src="/mari/hello-kitty-ballerina.png" alt="Hello Kitty vestida de bailarina" />
 
         <article className="letter sectionWrap">
           <p className="dropcap">Mari, você sabe que eu não sou muito bom com palavras e muito menos em expressar meus sentimentos, mas eu queria tentar pôr em palavras tudo que está dentro do meu coração sobre você.</p>
@@ -57,27 +52,15 @@ export default function Home() {
             <span className="milestoneText">aniversário<br /><strong>juntos</strong></span>
           </aside>
 
+          <img className="narutoSticker" src="/mari/naruto.png" alt="Naruto em estilo chibi sorrindo" />
+
           <p>Hoje é o seu quarto aniversário que passamos juntos, para você ver. Ao mesmo tempo, parece que estamos juntos há muito tempo e não estamos há quase nada, considerando os lindos anos que passaremos juntos, os anos que eu vou acordar e olhar para o lado e te ver dormindo, igual a uma princesa, os anos que eu vou poder fazer café da manhã para você, os anos que eu vou poder fazer massagem no seu pé, os anos que eu vou poder cuidar de você.</p>
         </article>
       </section>
 
-      <section className="interlude" aria-labelledby="interlude-title">
-        <div className="sectionWrap">
-          <p className="actLabel light">INTERVALO</p>
-          <h2 id="interlude-title">O mundo da Mari</h2>
-          <div className="interestRow">
-            {interests.map((interest) => (
-              <div className="interestTicket" key={interest.label}>
-                <span aria-hidden="true">{interest.icon}</span>
-                <strong>{interest.label}</strong>
-              </div>
-            ))}
-          </div>
-          <p className="interludeNote">Um pouquinho de tudo que faz os seus olhos brilharem.</p>
-        </div>
-      </section>
-
       <section className="admirationSection" aria-labelledby="admiration-title">
+        <img className="animeFriend animeFriendLeft" src="/mari/anime-blue.png" alt="Personagem de anime chibi com roupa azul" />
+        <img className="animeFriend animeFriendRight" src="/mari/anime-black-cutout-trimmed.png" alt="Personagem de anime chibi com roupa preta" />
         <div className="sectionWrap">
           <div className="letterHeading compact">
             <p className="actLabel">ATO II</p>
@@ -99,6 +82,7 @@ export default function Home() {
 
       <section className="futureSection" aria-labelledby="future-title">
         <div className="futureGlow" aria-hidden="true" />
+        <img className="theaterSketch" src="/mari/theater-sketch-cutout.png" alt="Máscaras de teatro desenhadas à mão" />
         <div className="sectionWrap futureContent">
           <p className="actLabel light">ATO III</p>
           <h2 id="future-title">O nosso próximo<br /><em>grande ato</em></h2>
@@ -116,6 +100,7 @@ export default function Home() {
       </section>
 
       <section className="finale" aria-labelledby="finale-title">
+        <img className="helloFinale" src="/mari/hello-kitty-red.png" alt="Hello Kitty acenando" />
         <div className="finaleConfetti" aria-hidden="true">
           <span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span>
         </div>
@@ -137,7 +122,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>Feito com todo o amor, especialmente para Mariana Maia.</p>
+        <p>Feito com todo o amor, especialmente para Mari Maia.</p>
         <span>Feliz aniversário, Mari ♡</span>
       </footer>
     </main>
